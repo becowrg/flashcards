@@ -7,6 +7,6 @@ If running this locally without a server, you likely won't be able to use data.j
 ```
 const flashCards = [
   { question: 'What is 2 + 2', answer: '4' },
-  { question: 'Another questions.', answer: 'Yes' },
+  { question: 'Another question?', answer: 'Yes' },
 ];
 ```
