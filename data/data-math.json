@@ -1,0 +1,5 @@
+[
+    { "question": "What is 3 + 3?", "answer": "6" },
+    { "question": "What is 21 / 7?", "answer": "3" },
+    { "question": "What is a fraction?", "answer": "a numerical quantity that is not a whole number (e.g. 1/2, 0.5)" }
+]
