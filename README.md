@@ -1,12 +1,3 @@
-Just a quick flash card game I put together to learn certain topics, just modify the data.json file for proper questions you wish to learn.
+Just a quick flash card game I put together to learn certain topics. Modify, add or delete the json data files in the `data` folder. In the current state, you need to modify script.js and add your data files to the array manually. Ideally, you could add some server-side code to fetch the list dynamically, but I've chosen to keep this simple for now.
 
-You need to modify script.js when adding new datasets, as trying to keep this JS/HTML only, no server-side, may adjust later.
-
-If running this locally without a server, you likely won't be able to use data.json loading for security reasons, so replace the flashCards variable loading code with:
-
-```
-const flashCards = [
-  { question: 'What is 2 + 2', answer: '4' },
-  { question: 'Another question?', answer: 'Yes' },
-];
-```
+A simple server can be downloaded if you have npm using `npm install http-server -g` but any simple http server capable of serving an index.html file should be able to run this.
