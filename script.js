@@ -6,7 +6,6 @@ const flipButton = document.getElementById('flip');
 const nextButton = document.getElementById('next');
 const datasetSelector = document.getElementById('datasetSelector');
 
-
 let flashCards = []; // Initialize empty array
 let currentCardIndex = 0;
 
@@ -46,7 +45,11 @@ function loadDataset(datasetPath) {
 // Function to dynamically populate the dataset selector
 function populateDatasetSelector() {
     // This is a simplified example. In a real-world scenario, you might fetch a list of files from the server.
-    const datasets = ['data/data-test.json', 'data/data-math.json', 'data/data-english.json']; // Add more paths
+    const datasets = [
+        'data/data-test.json', 
+        'data/data-math.json', 
+        'data/data-english.json'
+    ]; // Add more paths
 
     datasets.forEach(datasetPath => {
         const option = document.createElement('option');
@@ -67,8 +70,6 @@ datasetSelector.addEventListener('change', function() {
 });
 populateDatasetSelector();
 loadDataset(datasetSelector.options[1].value);
-
-
 
 flipButton.addEventListener('click', flipCard);
 nextButton.addEventListener('click', nextCard);
